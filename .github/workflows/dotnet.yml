@@ -28,7 +28,7 @@ jobs:
     - uses: actions/upload-artifact@master
       with:
         name: build-artifacts
-        path: Xamarin.Essentials/bin/Release/Xamarin.CommunityToolkit.*.*nupkg
+        path: Xamarin.Essentials/bin/Release/Xamarin.Essentials.*.nupkg
 
   publish:
     permissions:
