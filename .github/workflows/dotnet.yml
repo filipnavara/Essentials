@@ -24,7 +24,7 @@ jobs:
     - name: Install iOS workload
       run: dotnet workload install ios -s https://api.nuget.org/v3/index.json
     - name: Build and pack
-      run: msbuild Xamarin.Essentials /restore /t:Pack /p:Configuration=Release /p:PackageVersion=1.8.1.1
+      run: msbuild Xamarin.Essentials /restore /t:Pack /p:Configuration=Release /p:PackageVersion=1.8.1.2
     - uses: actions/upload-artifact@master
       with:
         name: build-artifacts
